@@ -5,7 +5,7 @@ const typingStyle = {
     ...container,
     zIndex: "2",
     position: "relative",
-    paddingTop: "20vh",
+    paddingTop: "10vh",
     color: "#FFFFFF"
   },
   cardHidden: {

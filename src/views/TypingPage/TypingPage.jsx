@@ -26,23 +26,42 @@ class TypingPage extends React.Component {
     };
   }
 
-  componentDidMount() {
-    // we add a hidden class to the card and after 700 ms we delete it and the transition appears
-    setTimeout(
-      function() {
-        this.setState({ cardAnimaton : "" });
-      }.bind(this),
-      700
-    );
-    axios.get(`/api/typing-test/${this.props.match.params.id}`)
+  /*static getDerivedStateFromProps(nextProps, prevState) {
+    if (nextProps.match !== prevState.match) {
+      return nextProps;
+    } else {
+      return null;
+    }
+  }*/
+
+  componentWillReceiveProps(prevProps) {
+    if (this.props.match !== prevProps.match) {
+      this._getTestData(prevProps);
+    }
+  }
+
+  _getTestData(props) {
+    axios.get(`/api/typing-test/${props.match.params.id}`)
       .then((response) => {
         this.setState({
+          match : props.match,
           gameState : response.data
         });
       })
       .catch((error) => {
         console.log(error);
+        return {};
       });
+  }
+
+  componentDidMount() {
+    // we add a hidden class to the card and after 700 ms we delete it and the transition appears
+    this._getTestData(this.props);
+    setTimeout(() => {
+      this.setState({
+        cardAnimaton : ""
+      });
+    }, 300);
   }
 
   render() {
@@ -58,7 +77,7 @@ class TypingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer justify="center"> <GridItem xs={12} sm={12} md={12}> <Card className={classes[this.state.cardAnimaton]}> <CardBody>
               {this.state.gameState &&
-              <TypingTest gameState={this.state.gameState} />
+              <TypingTest gameState={this.state.gameState}/>
               }
             </CardBody> </Card> </GridItem> </GridContainer>
           </div>

@@ -19,6 +19,9 @@ const styles = {
   },
   testTitle : {
     textAlign : "center",
+  },
+  wordSection : {
+    maxHeight: "18vh"
   }
 };
 
@@ -212,7 +215,7 @@ class TypingTest extends React.Component {
         <Small>{this.props.gameState.description}</Small>
         }
         </h2>{!this.state.finished &&
-      <WordSection id="word-section" words={this.state.words}/>
+      <WordSection id="word-section" className={classes.wordSection} words={this.state.words}/>
       } <TypingTextBox handleSubmitWord={this.handleSubmitWord}
                             handleChange={this.handleChange}
                             finished={this.state.finished}
@@ -234,7 +237,7 @@ class TypingTest extends React.Component {
                incorrectWordCount={this.state.incorrectWordCount}
                charactersTyped={this.state.charactersTyped}
                incorrectCharactersTyped={this.state.incorrectCharactersTyped}/>
-      } <NavigationButtons selectGameState={this.props.selectGameState} gameState={this.props.gameState}/>
+      } <NavigationButtons gameState={this.props.gameState}/>
       </div>
     );
   }
@@ -242,8 +245,7 @@ class TypingTest extends React.Component {
 
 TypingTest.propTypes = {
   classes : PropTypes.object.isRequired,
-  gameState : PropTypes.object.isRequired,
-  selectGameState : PropTypes.func.isRequired
+  gameState : PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(TypingTest);

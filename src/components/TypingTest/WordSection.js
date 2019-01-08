@@ -8,7 +8,8 @@ import Word from "./Word";
 const styles = {
   card: {
     minWidth: 275,
-    textAlign: "left"
+    textAlign: "left",
+    maxHeight: "18vh"
   }
 };
 

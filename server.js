@@ -4,11 +4,7 @@ let fs = require("fs");
 let _ = require("underscore");
 let port = 5000;
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
-});
-
-app.get("/typing-test/:testID", (req, res) => {
+app.get("/api/typing-test/:testID", (req, res) => {
   try {
     const test = require(`./server/typing_tests/${req.params.testID}`);
     res.setHeader("Content-Type", "application/json");
@@ -19,7 +15,7 @@ app.get("/typing-test/:testID", (req, res) => {
   }
 });
 
-app.get("/loadTests", (req, res) => {
+app.get("/api/loadTests", (req, res) => {
   const typingTestDir = "./server/typing_tests";
   fs.readdir(typingTestDir, (err, files) => {
     if (err) {

@@ -9,6 +9,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
+import { Link } from "react-router-dom";
 
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 
@@ -63,7 +64,7 @@ class LevelSectionCarousel extends React.Component {
               color="success"
               size="sm"
             >
-              Select
+              <Link to={`/typing/${level.path}`}>Select</Link>
             </Button>
           </div>
         </div>

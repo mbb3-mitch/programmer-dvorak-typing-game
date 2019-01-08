@@ -22,7 +22,7 @@ class MenuPage extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`/loadTests`)
+      .get(`/api/loadTests`)
       .then(
         function(response) {
           this.setState({

@@ -10,7 +10,7 @@ var indexRoutes = [
   { path : "/profile-page", name : "ProfilePage", component : ProfilePage },
   { path : "/login-page", name : "LoginPage", component : LoginPage },
   { path : "/components", name : "Components", component : Components },
-  { path : "/typing", name : "TypingPage", component : TypingPage },
+  { path : "/typing/:id", name : "TypingPage", component : TypingPage },
   { path : "/", exact: true, name : "MenuPage", component : MenuPage },
 
 ];

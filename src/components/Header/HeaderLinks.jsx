@@ -19,25 +19,20 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          Menu
-        </Button>
+        <Link to="/" className={classes.navLink}>
+            Menu
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
+          id="github-tooltip"
+          title="Check out the repo on github"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href=""
+            href="https://github.com/mbb3-mitch/programmer-dvorak-typing-game"
             target="_blank"
             className={classes.navLink}
           >

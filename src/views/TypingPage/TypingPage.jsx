@@ -26,14 +26,6 @@ class TypingPage extends React.Component {
     };
   }
 
-  /*static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.match !== prevState.match) {
-      return nextProps;
-    } else {
-      return null;
-    }
-  }*/
-
   componentWillReceiveProps(prevProps) {
     if (this.props.match !== prevProps.match) {
       this._getTestData(prevProps);

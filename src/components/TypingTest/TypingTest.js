@@ -8,20 +8,22 @@ import WordSection from "./WordSection";
 import Results from "./Results";
 import NavigationButtons from "./NavigationButtons";
 import Small from "components/Typography/Small.jsx";
+import RestartButton from "components/CustomButtons/RestartButton.jsx";
+
 import CountDownTimer from "./CountDownTimer";
 import StopWatch from "./Stopwatch";
 import TypingTextBox from "./TypingTextBox.jsx";
 
 const AVG_WORD_LENGTH = 5;
 const styles = {
-  center: {
+  center : {
     textAlign : "center"
   },
   testTitle : {
-    textAlign : "center",
+    textAlign : "center"
   },
   wordSection : {
-    maxHeight: "18vh"
+    maxHeight : "18vh"
   }
 };
 
@@ -29,6 +31,7 @@ class TypingTest extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {};
     this._setInitialState(this._mapWords(props.gameState.words));
     this.handleSubmitWord = this.handleSubmitWord.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -188,14 +191,16 @@ class TypingTest extends React.Component {
 
   restartTest() {
     this.setState(this.initialState);
-  }
-
-  componentDidUpdate() {
     this.focus();
   }
 
   componentDidMount() {
+    this._isMounted = true;
     this.focus();
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   focus() {
@@ -214,22 +219,14 @@ class TypingTest extends React.Component {
           {this.props.gameState.testName} <br/> {this.props.gameState.description &&
         <Small>{this.props.gameState.description}</Small>
         }
-        </h2>{!this.state.finished &&
+        </h2>{(this.state.words && !this.state.finished) &&
       <WordSection id="word-section" className={classes.wordSection} words={this.state.words}/>
-      } <TypingTextBox handleSubmitWord={this.handleSubmitWord}
-                            handleChange={this.handleChange}
-                            finished={this.state.finished}
-                            inputField={this.state.inputField}
-                     />
-        {this.state.testDuration ?
-          <CountDownTimer started={this.state.started} paused={this.state.paused} finished={this.state.finished} timeElapsed={this.state.timeElapsed} updateTimeElapsed={this.updateTimeElapsed} testDuration={this.state.testDuration} handleTimeUp={this.handleTimeUp}/> :
-          <StopWatch started={this.state.started} paused={this.state.paused} finished={this.state.finished} timeElapsed={this.state.timeElapsed} updateTimeElapsed={this.updateTimeElapsed}/>
-        }
-        <button id="restart" className="type-btn" tabIndex="2" onClick={() => this.restartTest()}>
-          <span id="restart-symbol">↻</span>
-        </button>
-        
-        {this.state.started &&
+      } {!this.state.finished &&
+      <TypingTextBox handleSubmitWord={this.handleSubmitWord} handleChange={this.handleChange} finished={this.state.finished} inputField={this.state.inputField}/>
+      } {this.state.testDuration ?
+        <CountDownTimer started={this.state.started} paused={this.state.paused} finished={this.state.finished} timeElapsed={this.state.timeElapsed} updateTimeElapsed={this.updateTimeElapsed} testDuration={this.state.testDuration} handleTimeUp={this.handleTimeUp}/> :
+        <StopWatch started={this.state.started} paused={this.state.paused} finished={this.state.finished} timeElapsed={this.state.timeElapsed} updateTimeElapsed={this.updateTimeElapsed}/>
+      } <RestartButton id="restart" restart={this.restartTest}> </RestartButton> {this.state.started &&
       <Results wpm={this.state.wpm}
                accuracy={this.state.accuracy}
                totalWordCount={this.state.totalWordCount}

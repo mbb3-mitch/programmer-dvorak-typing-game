@@ -3,13 +3,10 @@ import React from "react";
 class Results extends React.Component {
   render() {
     return (
-      <ul id="results">
-        <li>WPM: <span className="wpm-value">{this.props.wpm}</span></li>
-        <li>Accuracy: <span className="wpm-value">{Math.ceil(this.props.accuracy * 100)}%</span></li>
-        <li id="results-stats">
-          Total Words: <span>{this.props.totalWordCount}</span> | Correct Words: <span>{this.props.correctWordCount}</span> | Incorrect Words: <span>{this.props.incorrectWordCount}</span> | Characters Typed: <span>{this.props.charactersTyped}<span className='word--incorrect'>({this.props.incorrectCharactersTyped})</span></span>
-        </li>
-      </ul>
+      <div>
+        <h4><span className="wpm-value">WPM: {this.props.wpm}</span> | <span className="wpm-value">Accuracy: {Math.ceil(this.props.accuracy * 100)}%</span></h4>
+        <h4> Total Words: {this.props.totalWordCount} | Correct Words:{this.props.correctWordCount} | Incorrect Words: {this.props.incorrectWordCount} | Characters Typed: {this.props.charactersTyped}<span className='word--incorrect'>({this.props.incorrectCharactersTyped})</span></h4>
+      </div>
     );
   }
 }

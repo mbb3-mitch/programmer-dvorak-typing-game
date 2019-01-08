@@ -66,7 +66,7 @@ const customInputStyle = {
   input: {
     color: "#495057",
     "&,&::placeholder": {
-      fontSize: "14px",
+      fontSize: "22px",
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: "400",
       lineHeight: "1.42857",

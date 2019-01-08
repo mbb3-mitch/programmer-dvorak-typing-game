@@ -11,14 +11,14 @@ class TypingTextBox extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleKeyUp = this.handleKeyUp.bind(this);
     this.state = {
-      inputField : props.inputField
+      inputField: props.inputField
     };
   }
 
   handleChange(event) {
     this.props.handleChange(event);
     this.setState({
-      inputField : event.target.value
+      inputField: event.target.value
     });
   }
 
@@ -30,25 +30,26 @@ class TypingTextBox extends React.Component {
 
   render() {
     return (
-      <CustomInput inputProps={{
-        id : "typing-text-box",
-        value : this.props.inputField,
-        onChange : this.handleChange,
-        onKeyUp : this.handleKeyUp,
-        disabled : this.props.disabled,
-        autoComplete : "off"
-      }}/>
+      <CustomInput
+        inputProps={{
+          id: "typing-text-box",
+          value: this.props.inputField,
+          onChange: this.handleChange,
+          onKeyUp: this.handleKeyUp,
+          disabled: this.props.disabled,
+          autoComplete: "off"
+        }}
+      />
     );
   }
 }
 
-
 TypingTextBox.propTypes = {
-  classes : PropTypes.object.isRequired,
-  handleChange : PropTypes.func,
-  handleSubmitWord : PropTypes.func,
-  inputField : PropTypes.string,
-  disabled : PropTypes.bool
+  classes: PropTypes.object.isRequired,
+  handleChange: PropTypes.func,
+  handleSubmitWord: PropTypes.func,
+  inputField: PropTypes.string,
+  disabled: PropTypes.bool
 };
 
 export default withStyles(styles)(TypingTextBox);

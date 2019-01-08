@@ -2,7 +2,6 @@ import React from "react";
 import StopWatch from "./Stopwatch";
 
 class CountDownTimer extends StopWatch {
-
   tick() {
     if (this.props.finished) {
       return;
@@ -25,9 +24,7 @@ class CountDownTimer extends StopWatch {
     let minute = Math.floor(this.secondsRemaining() / 60);
     let seconds = this.secondsRemaining() % 60;
     let time = `${minute}:${seconds > 9 ? seconds : "0" + seconds}`;
-    return (
-      <div className="type-btn timer">{time}</div>
-    );
+    return <div className="type-btn timer">{time}</div>;
   }
 }
 

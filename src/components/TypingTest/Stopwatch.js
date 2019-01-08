@@ -29,9 +29,7 @@ class StopWatch extends React.Component {
     let minute = Math.floor(this.props.timeElapsed / 60);
     let seconds = this.props.timeElapsed % 60;
     let time = `${minute}:${seconds > 9 ? seconds : "0" + seconds}`;
-    return (
-      <div className="type-btn timer">{time}</div>
-    );
+    return <div className="type-btn timer">{time}</div>;
   }
 }
 

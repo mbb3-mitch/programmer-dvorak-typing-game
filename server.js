@@ -26,8 +26,8 @@ app.get("/api/loadTests", (req, res) => {
     _.each(files, file => {
       let testConfig = require(`${typingTestDir}/${file}`);
       typingTests.push({
-        path : file.replace(/\.json/, ""),
-        levelID : testConfig.testName
+        path: file.replace(/\.json/, ""),
+        levelID: testConfig.testName
       });
     });
     res.send({ typingTests });

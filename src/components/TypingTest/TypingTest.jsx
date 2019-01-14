@@ -72,6 +72,7 @@ class TypingTest extends React.Component {
       inputField: ""
     };
     if (!this.state) {
+      // eslint-disable-next-line
       this.state = this.initialState;
       return;
     }

@@ -11,6 +11,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 // core components
 import Button from "components/CustomButtons/Button.jsx";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
+
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
@@ -19,9 +21,53 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link to="/" className={classes.navLink}>
-            Menu
-        </Link>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Lessons"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            <Link to="/" className={classes.dropdownLink}>
+              Beginner
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Intermediate
+           </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Master
+          </Link>
+
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Practice"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            <Link to="/" className={classes.dropdownLink}>
+              Normal
+          </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Hardcore
+         </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Continuous typing
+        </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Dynamic difficulty
+         </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Custom
+         </Link>
+          ]}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip

@@ -4,7 +4,7 @@ import Header from "../src/components/Header/Header";
 
 storiesOf("Header", module).add("Simple display", () => (
   <Header
-    brand="Material Kit React"
+    brand="Burbledy typing"
     fixed
     color="blue"
     changeColorOnScroll={{

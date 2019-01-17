@@ -41,7 +41,7 @@ class MenuPage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Amazazing Game"
+          brand="Burbledy typing"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

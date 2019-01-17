@@ -10,6 +10,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import TypingTest from "components/TypingTest/TypingTest.jsx";
+import SectionTypingTest from "views/Components/Sections/SectionTypingTest.jsx";
 import axios from "axios";
 
 import typingPageStyle from "assets/jss/material-kit-react/views/typingPage.jsx";
@@ -63,7 +64,7 @@ class TypingPage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Amazazing Game"
+          brand="Burbledy typing"
           rightLinks={<HeaderLinks />}
           fixed
           {...rest}
@@ -77,20 +78,7 @@ class TypingPage extends React.Component {
           }}
         >
           <div className={classes.container}>
-            <GridContainer justify="center">
-              {" "}
-              <GridItem xs={12} sm={12} md={12}>
-                {" "}
-                <Card className={classes[this.state.cardAnimaton]}>
-                  {" "}
-                  <CardBody>
-                    {this.state.gameState && (
-                      <TypingTest gameState={this.state.gameState} />
-                    )}
-                  </CardBody>{" "}
-                </Card>{" "}
-              </GridItem>{" "}
-            </GridContainer>
+            <SectionTypingTest gameState={this.state.gameState} cardAnimaton={this.state.cardAnimaton} />
           </div>
           <Footer whiteFont />
         </div>

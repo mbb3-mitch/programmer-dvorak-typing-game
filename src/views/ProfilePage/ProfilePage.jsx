@@ -45,7 +45,7 @@ class ProfilePage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Material Kit React"
+          brand="Burbledy typing"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

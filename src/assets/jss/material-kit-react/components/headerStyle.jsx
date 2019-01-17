@@ -53,15 +53,21 @@ const headerStyle = {
   },
   title: {
     ...defaultFont,
+    color: "inherit",
+    position: "relative",
+    padding: "0.9375rem",
+    fontWeight: "400",
+    textTransform: "uppercase",
+    textDecoration: "none",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover,&:focus": {
+      color: "white",
+      background: "rgba(200, 200, 200, 0.2)"
+    },
     lineHeight: "30px",
     fontSize: "18px",
-    borderRadius: "3px",
-    textTransform: "none",
-    color: "inherit",
-    "&:hover,&:focus": {
-      color: "inherit",
-      background: "transparent"
-    }
+    borderRadius: "3px"
   },
   appResponsive: {
     margin: "20px 10px"

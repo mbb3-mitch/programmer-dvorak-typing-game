@@ -10,21 +10,16 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.jsx";
+import PurposeSection from "./Sections/PurposeSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
 import SectionTypingTest from "views/Components/Sections/SectionTypingTest.jsx";
-
-const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -66,8 +61,7 @@ class LandingPage extends React.Component {
       <div>
         <Header
           color="transparent"
-          routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Burbledy typing"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -77,15 +71,16 @@ class LandingPage extends React.Component {
           {...rest}
         />
         <Parallax filter image={require("assets/img/landing-bg.jpg")}>
-          <div className={classes.container}>
-            <SectionTypingTest gameState={this.state.gameState} cardAnimaton={this.state.cardAnimaton} />
+          <div className={classes.sectionTypingTest}>
+            <SectionTypingTest
+              gameState={this.state.gameState}
+              cardAnimaton={this.state.cardAnimaton}
+            />
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            <PurposeSection />
           </div>
         </div>
         <Footer />

@@ -6,7 +6,7 @@ class NavigationButtons extends React.Component {
   render() {
     return (
       <section className="type-section">
-        <Link to={`/`}>
+        <Link to={`/menu`}>
           <Button variant="contained"> Back </Button>
         </Link>
         {this.props.gameState.previousTest && (

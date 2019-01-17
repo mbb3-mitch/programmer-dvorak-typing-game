@@ -29,13 +29,13 @@ function HeaderLinks({ ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Beginner
             </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Intermediate
            </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Master
           </Link>
 
@@ -51,19 +51,19 @@ function HeaderLinks({ ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Normal
           </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Hardcore
          </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Continuous typing
         </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Dynamic difficulty
          </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/menu" className={classes.dropdownLink}>
               Custom
          </Link>
           ]}

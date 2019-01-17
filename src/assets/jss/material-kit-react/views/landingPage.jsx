@@ -6,6 +6,14 @@ const landingPageStyle = {
     color: "#FFFFFF",
     ...container
   },
+  sectionTypingTest: {
+    position: "relative",
+    top: "-10vh",
+    marginTop: 85,
+    zIndex: "12",
+    color: "#FFFFFF",
+    ...container
+  },
   title: {
     ...title,
     display: "inline-block",

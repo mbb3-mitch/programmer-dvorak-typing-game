@@ -16,22 +16,20 @@ class SectionTypingTest extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div className={classes.section}>
-        <div className={classes.container}>
-          <GridContainer justify="center">
+        <GridContainer justify="center">
+          {" "}
+          <GridItem xs={12} sm={12} md={12}>
             {" "}
-            <GridItem xs={12} sm={12} md={12}>
+            <Card className={classes[this.props.cardAnimaton]}>
               {" "}
-              <Card className={classes[this.props.cardAnimaton]}>
-                {" "}
-                <CardBody>
-                  {this.props.gameState && (
-                    <TypingTest gameState={this.props.gameState} />
-                  )}
-                </CardBody>{" "}
-              </Card>{" "}
-            </GridItem>{" "}
-          </GridContainer>
-        </div>
+              <CardBody>
+                {this.props.gameState && (
+                  <TypingTest gameState={this.props.gameState} />
+                )}
+              </CardBody>{" "}
+            </Card>{" "}
+          </GridItem>{" "}
+        </GridContainer>
       </div>
     );
   }

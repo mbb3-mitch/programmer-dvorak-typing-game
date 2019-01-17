@@ -275,14 +275,14 @@ class TypingTest extends React.Component {
             handleTimeUp={this.handleTimeUp}
           />
         ) : (
-            <StopWatch
-              started={this.state.started}
-              paused={this.state.paused}
-              finished={this.state.finished}
-              timeElapsed={this.state.timeElapsed}
-              updateTimeElapsed={this.updateTimeElapsed}
-            />
-          )}{" "}
+          <StopWatch
+            started={this.state.started}
+            paused={this.state.paused}
+            finished={this.state.finished}
+            timeElapsed={this.state.timeElapsed}
+            updateTimeElapsed={this.updateTimeElapsed}
+          />
+        )}{" "}
         <RestartButton id="restart" restart={this.restartTest}>
           {" "}
         </RestartButton>{" "}

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 21: Comprehensive, including K and M",
+	"name" : "Lesson 21: Comprehensive, including K and M",
 	"words" : [
 		"aaaa",
 		"cccc",
@@ -170,7 +170,7 @@
 		"many",
 		"cameras."
 	],
-	"previousTest" : "dvorak_20",
-	"nextTest" : "dvorak_22",
+	"previousConfig" : "dvorak_20",
+	"nextConfig" : "dvorak_22",
 	"timer" : false
 }

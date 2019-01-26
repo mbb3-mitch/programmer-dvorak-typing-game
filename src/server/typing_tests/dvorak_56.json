@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 56: Comprehensive, including 5 and 4",
+	"name" : "Lesson 56: Comprehensive, including 5 and 4",
 	"words" : [
 		"((((",
 		"====",
@@ -94,7 +94,7 @@
 		"$ev->[t5]",
 		"$ev->[t5]"
 	],
-	"previousTest" : "dvorak_55",
-	"nextTest" : "dvorak_57",
+	"previousConfig" : "dvorak_55",
+	"nextConfig" : "dvorak_57",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 30: Introducing < and >: Left third finger, left second finger",
+	"name" : "Lesson 30: Introducing < and >: Left third finger, left second finger",
 	"words" : [
 		"<<<<",
 		">>>>",
@@ -62,7 +62,7 @@
 		"><>",
 		"><>"
 	],
-	"previousTest" : "dvorak_29",
-	"nextTest" : "dvorak_31",
+	"previousConfig" : "dvorak_29",
+	"nextConfig" : "dvorak_31",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 22: Introducing J and W: Second fingers reaching down",
+	"name" : "Lesson 22: Introducing J and W: Second fingers reaching down",
 	"words" : [
 		"jjjj",
 		"wwww",
@@ -62,7 +62,7 @@
 		"Jewett",
 		"Jewett"
 	],
-	"previousTest" : "dvorak_21",
-	"nextTest" : "dvorak_23",
+	"previousConfig" : "dvorak_21",
+	"nextConfig" : "dvorak_23",
 	"timer" : false
 }

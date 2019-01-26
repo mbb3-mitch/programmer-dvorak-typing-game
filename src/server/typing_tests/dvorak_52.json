@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 52: Comprehensive, including 1, 9 and 0",
+	"name" : "Lesson 52: Comprehensive, including 1, 9 and 0",
 	"words" : [
 		"((((",
 		"====",
@@ -70,7 +70,7 @@
 		"$1.*.doc",
 		"$1.*.doc"
 	],
-	"previousTest" : "dvorak_51",
-	"nextTest" : "dvorak_53",
+	"previousConfig" : "dvorak_51",
+	"nextConfig" : "dvorak_53",
 	"timer" : false
 }

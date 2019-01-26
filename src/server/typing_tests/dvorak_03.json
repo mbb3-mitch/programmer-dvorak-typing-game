@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 3: Comprehensive: E, H, T, U",
+	"name" : "Lesson 3: Comprehensive: E, H, T, U",
 	"words" : [
 		"eeee",
 		"hhhh",
@@ -65,7 +65,7 @@
 		"thee",
 		"tutu"
 	],
-	"previousTest" : "dvorak_02",
-	"nextTest" : "dvorak_04",
+	"previousConfig" : "dvorak_02",
+	"nextConfig" : "dvorak_04",
 	"timer" : false
 }

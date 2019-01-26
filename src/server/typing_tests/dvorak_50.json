@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 50: Comprehensive, including $ and #",
+	"name" : "Lesson 50: Comprehensive, including $ and #",
 	"words" : [
 		"((((",
 		"====",
@@ -72,7 +72,7 @@
 		"#x#[!a!b!c]",
 		"#x#[!a!b!c]"
 	],
-	"previousTest" : "dvorak_49",
-	"nextTest" : "dvorak_51",
+	"previousConfig" : "dvorak_49",
+	"nextConfig" : "dvorak_51",
 	"timer" : false
 }

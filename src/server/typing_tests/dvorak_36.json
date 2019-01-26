@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 36: Introducing @ and ^: Right fourth finger",
+	"name" : "Lesson 36: Introducing @ and ^: Right fourth finger",
 	"words" : [
 		"@@@@",
 		"^^^^",
@@ -46,7 +46,7 @@
 		"^^@@",
 		"^^@@"
 	],
-	"previousTest" : "dvorak_35",
-	"nextTest" : "dvorak_37",
+	"previousConfig" : "dvorak_35",
+	"nextConfig" : "dvorak_37",
 	"timer" : false
 }

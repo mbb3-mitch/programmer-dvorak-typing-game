@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 44: Comprehensive, including { and +",
+	"name" : "Lesson 44: Comprehensive, including { and +",
 	"words" : [
 		"((((",
 		"====",
@@ -56,7 +56,7 @@
 		"*({=+=})*",
 		"*({=+=})*"
 	],
-	"previousTest" : "dvorak_43",
-	"nextTest" : "dvorak_45",
+	"previousConfig" : "dvorak_43",
+	"nextConfig" : "dvorak_45",
 	"timer" : false
 }

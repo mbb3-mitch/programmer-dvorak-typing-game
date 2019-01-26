@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 4: Introducing O and N: Home row, third fingers",
+	"name" : "Lesson 4: Introducing O and N: Home row, third fingers",
 	"words" : [
 		"oooo",
 		"nnnn",
@@ -50,7 +50,7 @@
 		"noo",
 		"ono"
 	],
-	"previousTest" : "dvorak_03",
-	"nextTest" : "dvorak_05",
+	"previousConfig" : "dvorak_03",
+	"nextConfig" : "dvorak_05",
 	"timer" : false
 }

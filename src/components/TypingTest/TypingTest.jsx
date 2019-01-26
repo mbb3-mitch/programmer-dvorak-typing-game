@@ -243,7 +243,7 @@ class TypingTest extends React.Component {
       <div className={classes.center}>
         <h2 className={titleClasses}>
           {" "}
-          {this.props.gameState.testName} <br />{" "}
+          {this.props.gameState.name} <br />{" "}
           {this.props.gameState.description && (
             <Small> {this.props.gameState.description} </Small>
           )}{" "}

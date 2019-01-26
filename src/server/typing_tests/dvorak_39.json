@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 39: Comprehensive, including \\ and |",
+	"name" : "Lesson 39: Comprehensive, including \\ and |",
 	"words" : [
 		"<<<<",
 		">>>>",
@@ -93,7 +93,7 @@
 		"?",
 		"\"one\":\"two\">file.txt"
 	],
-	"previousTest" : "dvorak_38",
-	"nextTest" : "dvorak_40",
+	"previousConfig" : "dvorak_38",
+	"nextConfig" : "dvorak_40",
 	"timer" : false
 }

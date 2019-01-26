@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 48: Comprehensive, including & and !",
+	"name" : "Lesson 48: Comprehensive, including & and !",
 	"words" : [
 		"((((",
 		"====",
@@ -72,7 +72,7 @@
 		"!((var++)*(x[z+y]))->{t}",
 		"!((var++)*(x[z+y]))->{t}"
 	],
-	"previousTest" : "dvorak_47",
-	"nextTest" : "dvorak_49",
+	"previousConfig" : "dvorak_47",
+	"nextConfig" : "dvorak_49",
 	"timer" : false
 }

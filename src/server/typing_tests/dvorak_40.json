@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 40: Introducing (, * and =: Number row, index fingers",
+	"name" : "Lesson 40: Introducing (, * and =: Number row, index fingers",
 	"words" : [
 		"((((",
 		"****",
@@ -76,7 +76,7 @@
 		"*(=",
 		"*(="
 	],
-	"previousTest" : "dvorak_39",
-	"nextTest" : "dvorak_41",
+	"previousConfig" : "dvorak_39",
+	"nextConfig" : "dvorak_41",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 17: Comprehensive, including ' and L",
+	"name" : "Lesson 17: Comprehensive, including ' and L",
 	"words" : [
 		"aaaa",
 		"cccc",
@@ -171,7 +171,7 @@
 		"her",
 		"sleep."
 	],
-	"previousTest" : "dvorak_16",
-	"nextTest" : "dvorak_18",
+	"previousConfig" : "dvorak_16",
+	"nextConfig" : "dvorak_18",
 	"timer" : false
 }

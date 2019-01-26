@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 19: Comprehensive, including Y and F (full upper/home rows)",
+	"name" : "Lesson 19: Comprehensive, including Y and F (full upper/home rows)",
 	"words" : [
 		"aaaa",
 		"cccc",
@@ -180,7 +180,7 @@
 		"Draft",
 		"Ale."
 	],
-	"previousTest" : "dvorak_18",
-	"nextTest" : "dvorak_20",
+	"previousConfig" : "dvorak_18",
+	"nextConfig" : "dvorak_20",
 	"timer" : false
 }

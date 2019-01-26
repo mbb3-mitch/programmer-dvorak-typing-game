@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 1: Introducing U and H: Home row, Index fingers",
+	"name" : "Lesson 1: Introducing U and H: Home row, Index fingers",
 	"words" : [
 		"uuuu",
 		"hhhh",
@@ -52,6 +52,6 @@
 		"huh",
 		"uhh"
 	],
-	"nextTest" : "dvorak_02",
+	"nextConfig" : "dvorak_02",
 	"timer" : false
 }

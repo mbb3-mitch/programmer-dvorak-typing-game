@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 28: Introducing X and B: Index fingers stretching down",
+	"name" : "Lesson 28: Introducing X and B: Index fingers stretching down",
 	"words" : [
 		"bbbb",
 		"xxxx",
@@ -34,7 +34,7 @@
 		"xb",
 		"xb"
 	],
-	"previousTest" : "dvorak_27",
-	"nextTest" : "dvorak_29",
+	"previousConfig" : "dvorak_27",
+	"nextConfig" : "dvorak_29",
 	"timer" : false
 }

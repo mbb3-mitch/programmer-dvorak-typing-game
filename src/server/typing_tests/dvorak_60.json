@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 60: Comprehensive, including % and 8",
+	"name" : "Lesson 60: Comprehensive, including % and 8",
 	"words" : [
 		"((((",
 		"====",
@@ -74,7 +74,7 @@
 		"&m->ping(z%8)",
 		"&m->ping(z%8)"
 	],
-	"previousTest" : "dvorak_59",
-	"nextTest" : "dvorak_61",
+	"previousConfig" : "dvorak_59",
+	"nextConfig" : "dvorak_61",
 	"timer" : false
 }

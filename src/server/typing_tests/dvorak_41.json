@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 41: Introducing } and ): Number row, left second finger, right index finger",
+	"name" : "Lesson 41: Introducing } and ): Number row, left second finger, right index finger",
 	"words" : [
 		"}}}}",
 		"))))",
@@ -50,7 +50,7 @@
 		")})",
 		")})"
 	],
-	"previousTest" : "dvorak_40",
-	"nextTest" : "dvorak_42",
+	"previousConfig" : "dvorak_40",
+	"nextConfig" : "dvorak_42",
 	"timer" : false
 }

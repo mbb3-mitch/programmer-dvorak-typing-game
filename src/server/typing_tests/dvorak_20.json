@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 20: Introducing K and M: Index fingers reaching down",
+	"name" : "Lesson 20: Introducing K and M: Index fingers reaching down",
 	"words" : [
 		"kkkk",
 		"mmmm",
@@ -62,7 +62,7 @@
 		"muk",
 		"muk"
 	],
-	"previousTest" : "dvorak_19",
-	"nextTest" : "dvorak_21",
+	"previousConfig" : "dvorak_19",
+	"nextConfig" : "dvorak_21",
 	"timer" : false
 }

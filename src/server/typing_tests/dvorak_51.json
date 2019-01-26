@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 51: Introducing 1, 9 and 0: Number row, index fingers",
+	"name" : "Lesson 51: Introducing 1, 9 and 0: Number row, index fingers",
 	"words" : [
 		"1111",
 		"9999",
@@ -126,7 +126,7 @@
 		"9091",
 		"9091"
 	],
-	"previousTest" : "dvorak_50",
-	"nextTest" : "dvorak_52",
+	"previousConfig" : "dvorak_50",
+	"nextConfig" : "dvorak_52",
 	"timer" : false
 }

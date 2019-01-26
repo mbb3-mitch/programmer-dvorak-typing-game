@@ -3,34 +3,37 @@ let server = require("http").Server(app);
 let fs = require("fs");
 let _ = require("underscore");
 let port = 5000;
+const TYPING_MODE = ":typingMode(lessons|practice)";
+const CONFIG_ID = ":configID([\\w_]*)";
 
-app.get("/api/typing-test/:testID", (req, res) => {
+app.get(`/api/typing/${TYPING_MODE}/${CONFIG_ID}`, (req, res) => {
   try {
-    const test = require(`./server/typing_tests/${req.params.testID}`);
+    const config = require(`./server/${req.params.typingMode}/${req.params.configID}.json`);
     res.setHeader("Content-Type", "application/json");
-    res.send(test);
+    res.send(config);
   } catch (e) {
     console.log(e);
     res.send({});
   }
 });
 
-app.get("/api/loadTests", (req, res) => {
-  const typingTestDir = "./server/typing_tests";
-  fs.readdir(typingTestDir, (err, files) => {
+app.get(`/api/load/${TYPING_MODE}/:category?`, (req, res) => {
+  const category = req.params.category ? "/" + req.params.category : "";
+  const typingConfigDir = `./server/${req.params.typingMode}${category}`;
+  fs.readdir(typingConfigDir, (err, files) => {
     if (err) {
       console.error(err);
       return;
     }
-    let typingTests = [];
+    let typingConfigs = [];
     _.each(files, file => {
-      let testConfig = require(`${typingTestDir}/${file}`);
-      typingTests.push({
+      let config = require(`${typingConfigDir}/${file}`);
+      typingConfigs.push({
         path: file.replace(/\.json/, ""),
-        levelID: testConfig.testName
+        levelID: config.name
       });
     });
-    res.send({ typingTests });
+    res.send({ typingConfigs });
   });
 });
 

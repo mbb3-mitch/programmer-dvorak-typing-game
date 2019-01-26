@@ -16,17 +16,17 @@ class MenuPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      typingTests: []
+      typingConfigs: []
     };
   }
 
   componentDidMount() {
     axios
-      .get(`/api/loadTests`)
+      .get(`/api/load/lessons/dvorak`)
       .then(
         function(response) {
           this.setState({
-            typingTests: response.data.typingTests
+            typingConfigs: response.data.typingConfigs
           });
         }.bind(this)
       )
@@ -52,7 +52,7 @@ class MenuPage extends React.Component {
         />{" "}
         <Parallax menu filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <LevelSectionCarousel levels={this.state.typingTests} />
+          <LevelSectionCarousel levels={this.state.typingConfigs} />
         </div>
         <Footer />
       </div>

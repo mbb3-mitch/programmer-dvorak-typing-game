@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 24: Introducing Q and V: Third fingers reaching down",
+	"name" : "Lesson 24: Introducing Q and V: Third fingers reaching down",
 	"words" : [
 		"qqqq",
 		"vvvv",
@@ -34,7 +34,7 @@
 		"vq",
 		"vq"
 	],
-	"previousTest" : "dvorak_23",
-	"nextTest" : "dvorak_25",
+	"previousConfig" : "dvorak_23",
+	"nextConfig" : "dvorak_25",
 	"timer" : false
 }

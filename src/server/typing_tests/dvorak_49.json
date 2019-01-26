@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 49: introducing $ and #: Number row, fourth fingers",
+	"name" : "Lesson 49: introducing $ and #: Number row, fourth fingers",
 	"words" : [
 		"$$$$",
 		"####",
@@ -64,7 +64,7 @@
 		"$#$#",
 		"$#$#"
 	],
-	"previousTest" : "dvorak_48",
-	"nextTest" : "dvorak_50",
+	"previousConfig" : "dvorak_48",
+	"nextConfig" : "dvorak_50",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 9: Comprehensive, including I and D (entire home row)",
+	"name" : "Lesson 9: Comprehensive, including I and D (entire home row)",
 	"words" : [
 		"aaaa",
 		"dddd",
@@ -100,7 +100,7 @@
 		"in",
 		"Indonesia"
 	],
-	"previousTest" : "dvorak_08",
-	"nextTest" : "dvorak_10",
+	"previousConfig" : "dvorak_08",
+	"nextConfig" : "dvorak_10",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 15: Comprehensive, including , and R",
+	"name" : "Lesson 15: Comprehensive, including , and R",
 	"words" : [
 		"aaaa",
 		"cccc",
@@ -288,7 +288,7 @@
 		"R",
 		"proportion."
 	],
-	"previousTest" : "dvorak_14",
-	"nextTest" : "dvorak_16",
+	"previousConfig" : "dvorak_14",
+	"nextConfig" : "dvorak_16",
 	"timer" : false
 }

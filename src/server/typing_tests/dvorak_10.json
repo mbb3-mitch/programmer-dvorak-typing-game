@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 10: Introducing P and G: First fingers reaching up",
+	"name" : "Lesson 10: Introducing P and G: First fingers reaching up",
 	"words" : [
 		"gggg",
 		"pppp",
@@ -66,7 +66,7 @@
 		"Pugh",
 		"Pugh"
 	],
-	"previousTest" : "dvorak_9",
-	"nextTest" : "dvorak_11",
+	"previousConfig" : "dvorak_9",
+	"nextConfig" : "dvorak_11",
 	"timer" : false
 }

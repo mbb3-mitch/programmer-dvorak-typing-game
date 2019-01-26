@@ -9,13 +9,13 @@ class NavigationButtons extends React.Component {
         <Link to={`/menu`}>
           <Button variant="contained"> Back </Button>
         </Link>
-        {this.props.gameState.previousTest && (
-          <Link to={`/typing/${this.props.gameState.previousTest}`}>
+        {this.props.gameState.previousConfig && (
+          <Link to={`/typing/${this.props.gameState.previousConfig}`}>
             <Button variant="contained">Previous Test</Button>
           </Link>
         )}
-        {this.props.gameState.nextTest && (
-          <Link to={`/typing/${this.props.gameState.nextTest}`}>
+        {this.props.gameState.nextConfig && (
+          <Link to={`/typing/${this.props.gameState.nextConfig}`}>
             <Button variant="contained">Next Test</Button>
           </Link>
         )}

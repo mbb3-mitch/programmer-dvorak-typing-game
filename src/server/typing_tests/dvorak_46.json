@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 46: Comprehensive, including [ and ]",
+	"name" : "Lesson 46: Comprehensive, including [ and ]",
 	"words" : [
 		"((((",
 		"====",
@@ -52,7 +52,7 @@
 		"d:{var[a+b](z++)}",
 		"d:{var[a+b](z++)}"
 	],
-	"previousTest" : "dvorak_45",
-	"nextTest" : "dvorak_47",
+	"previousConfig" : "dvorak_45",
+	"nextConfig" : "dvorak_47",
 	"timer" : false
 }

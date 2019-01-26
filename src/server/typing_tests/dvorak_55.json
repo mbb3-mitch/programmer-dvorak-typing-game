@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 55: Introducing 5 and 4: Number row, third fingers",
+	"name" : "Lesson 55: Introducing 5 and 4: Number row, third fingers",
 	"words" : [
 		"5555",
 		"4444",
@@ -58,7 +58,7 @@
 		"5",
 		"45"
 	],
-	"previousTest" : "dvorak_54",
-	"nextTest" : "dvorak_56",
+	"previousConfig" : "dvorak_54",
+	"nextConfig" : "dvorak_56",
 	"timer" : false
 }

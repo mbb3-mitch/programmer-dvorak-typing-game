@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 18: Introducing Y and F: Index fingers stretching up",
+	"name" : "Lesson 18: Introducing Y and F: Index fingers stretching up",
 	"words" : [
 		"ffff",
 		"yyyy",
@@ -64,7 +64,7 @@
 		"puppy",
 		"puppy"
 	],
-	"previousTest" : "dvorak_17",
-	"nextTest" : "dvorak_19",
+	"previousConfig" : "dvorak_17",
+	"nextConfig" : "dvorak_19",
 	"timer" : false
 }

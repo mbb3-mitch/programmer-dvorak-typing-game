@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 34: Introducing / and ?: Right fourth finger",
+	"name" : "Lesson 34: Introducing / and ?: Right fourth finger",
 	"words" : [
 		"\/\/\/\/",
 		"\/\/\/\/",
@@ -34,7 +34,7 @@
 		"\/\/?",
 		"\/\/?"
 	],
-	"previousTest" : "dvorak_33",
-	"nextTest" : "dvorak_35",
+	"previousConfig" : "dvorak_33",
+	"nextConfig" : "dvorak_35",
 	"timer" : false
 }

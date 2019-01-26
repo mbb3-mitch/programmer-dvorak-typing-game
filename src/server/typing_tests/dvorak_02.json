@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 2: Introducing E and T: Home row, Second fingers",
+	"name" : "Lesson 2: Introducing E and T: Home row, Second fingers",
 	"words" : [
 		"eeee",
 		"tttt",
@@ -52,7 +52,7 @@
 		"tete",
 		"et"
 	],
-	"previousTest" : "dvorak_01",
-	"nextTest" : "dvorak_03",
+	"previousConfig" : "dvorak_01",
+	"nextConfig" : "dvorak_03",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 16: Introducing ' and L: Fourth fingers",
+	"name" : "Lesson 16: Introducing ' and L: Fourth fingers",
 	"words" : [
 		"llll",
 		"''''",
@@ -62,7 +62,7 @@
 		"Sal's",
 		"Sal's"
 	],
-	"previousTest" : "dvorak_15",
-	"nextTest" : "dvorak_17",
+	"previousConfig" : "dvorak_15",
+	"nextConfig" : "dvorak_17",
 	"timer" : false
 }

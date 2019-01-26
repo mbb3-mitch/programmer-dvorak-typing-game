@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 31: Comprehensive, including < and >",
+	"name" : "Lesson 31: Comprehensive, including < and >",
 	"words" : [
 		"<<<<",
 		"<<<<",
@@ -112,7 +112,7 @@
 		">",
 		"sorted.txt;"
 	],
-	"previousTest" : "dvorak_30",
-	"nextTest" : "dvorak_32",
+	"previousConfig" : "dvorak_30",
+	"nextConfig" : "dvorak_32",
 	"timer" : false
 }

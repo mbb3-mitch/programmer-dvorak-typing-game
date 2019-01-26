@@ -30,9 +30,9 @@ class LandingPage extends React.Component {
       gameState: null
     };
   }
-  _getTestData(props) {
+  _getConfigData(props) {
     axios
-      .get(`/api/typing-test/500_words`)
+      .get(`/api/typing/practice/500_words`)
       .then(response => {
         this.setState({
           match: props.match,
@@ -47,7 +47,7 @@ class LandingPage extends React.Component {
 
   componentDidMount() {
     // we add a hidden class to the card and after 700 ms we delete it and the transition appears
-    this._getTestData(this.props);
+    this._getConfigData(this.props);
     setTimeout(() => {
       this.setState({
         cardAnimaton: ""

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 8: Introducing I and D: Index finger stretching in the home row",
+	"name" : "Lesson 8: Introducing I and D: Index finger stretching in the home row",
 	"words" : [
 		"iiii",
 		"dddd",
@@ -64,7 +64,7 @@
 		"hid",
 		"hid"
 	],
-	"previousTest" : "dvorak_06",
-	"nextTest" : "dvorak_09",
+	"previousConfig" : "dvorak_06",
+	"nextConfig" : "dvorak_09",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 33: Comprehensive, including - and _",
+	"name" : "Lesson 33: Comprehensive, including - and _",
 	"words" : [
 		"<<<<",
 		">>>>",
@@ -86,7 +86,7 @@
 		"->",
 		"c;"
 	],
-	"previousTest" : "dvorak_32",
-	"nextTest" : "dvorak_34",
+	"previousConfig" : "dvorak_32",
+	"nextConfig" : "dvorak_34",
 	"timer" : false
 }

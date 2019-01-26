@@ -29,11 +29,11 @@ class TypingPage extends React.Component {
 
   componentWillReceiveProps(prevProps) {
     if (this.props.match !== prevProps.match) {
-      this._getTestData(prevProps);
+      this._getConfigData(prevProps);
     }
   }
 
-  _getTestData(props) {
+  _getConfigData(props) {
     axios
       .get(`/api/typing-test/${props.match.params.id}`)
       .then(response => {
@@ -50,7 +50,7 @@ class TypingPage extends React.Component {
 
   componentDidMount() {
     // we add a hidden class to the card and after 700 ms we delete it and the transition appears
-    this._getTestData(this.props);
+    this._getConfigData(this.props);
     setTimeout(() => {
       this.setState({
         cardAnimaton: ""

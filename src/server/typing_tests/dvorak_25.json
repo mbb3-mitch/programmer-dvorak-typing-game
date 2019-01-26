@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 25: Comprehensive, including Q and V",
+	"name" : "Lesson 25: Comprehensive, including Q and V",
 	"words" : [
 		"aaaa",
 		"cccc",
@@ -228,7 +228,7 @@
 		"on",
 		"irreverence."
 	],
-	"previousTest" : "dvorak_24",
-	"nextTest" : "dvorak_26",
+	"previousConfig" : "dvorak_24",
+	"nextConfig" : "dvorak_26",
 	"timer" : false
 }

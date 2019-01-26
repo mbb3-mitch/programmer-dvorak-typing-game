@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 47: introducing & and !: Number row, fourth fingers",
+	"name" : "Lesson 47: introducing & and !: Number row, fourth fingers",
 	"words" : [
 		"&&&&",
 		"!!!!",
@@ -70,7 +70,7 @@
 		"!!",
 		"&"
 	],
-	"previousTest" : "dvorak_46",
-	"nextTest" : "dvorak_48",
+	"previousConfig" : "dvorak_46",
+	"nextConfig" : "dvorak_48",
 	"timer" : false
 }

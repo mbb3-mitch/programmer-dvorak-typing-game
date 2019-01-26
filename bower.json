@@ -1,19 +1,19 @@
 {
-  "name": "material-kit-react",
-  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "name": "programmer-dvorak-typing-game",
+  "homepage": "https://github.com/mbb3-mitch/programmer-dvorak-typing-game",
   "authors": [
-    "creative-tim"
+    "mbb3-mitch"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
+  "description": "A modern web application to learn programmer dvorak built with Material-UI Kit",
   "main": "dist/index.js",
   "keywords": [
-    "material",
-    "design",
+    "typing",
+    "dvorak",
     "material-ui",
-    "google",
-    "twitter"
+    "react",
+    "express"
   ],
-  "license": "Creative TIM License",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

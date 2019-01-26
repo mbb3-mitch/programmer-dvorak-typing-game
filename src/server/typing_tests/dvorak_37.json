@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 37: Comprehensive, including @ and ^",
+	"name" : "Lesson 37: Comprehensive, including @ and ^",
 	"words" : [
 		"<<<<",
 		">>>>",
@@ -90,7 +90,7 @@
 		":",
 		"@m;"
 	],
-	"previousTest" : "dvorak_36",
-	"nextTest" : "dvorak_38",
+	"previousConfig" : "dvorak_36",
+	"nextConfig" : "dvorak_38",
 	"timer" : false
 }

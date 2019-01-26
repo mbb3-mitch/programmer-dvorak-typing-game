@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 14: Introducing , and R: Third fingers reaching up",
+	"name" : "Lesson 14: Introducing , and R: Third fingers reaching up",
 	"words" : [
 		"rrrr",
 		",,,,",
@@ -46,7 +46,7 @@
 		"Orono,",
 		"Orono"
 	],
-	"previousTest" : "dvorak_13",
-	"nextTest" : "dvorak_15",
+	"previousConfig" : "dvorak_13",
+	"nextConfig" : "dvorak_15",
 	"timer" : false
 }

@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 35: Comprehensive, including / and ?",
+	"name" : "Lesson 35: Comprehensive, including / and ?",
 	"words" : [
 		"<<<<",
 		">>>>",
@@ -89,7 +89,7 @@
 		"<<-?:?-->",
 		"<<-?:?-->"
 	],
-	"previousTest" : "dvorak_34",
-	"nextTest" : "dvorak_36",
+	"previousConfig" : "dvorak_34",
+	"nextConfig" : "dvorak_36",
 	"timer" : false
 }

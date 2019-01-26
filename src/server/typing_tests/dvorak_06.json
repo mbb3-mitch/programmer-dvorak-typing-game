@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 6: Introducing A and S: Home row, fourth fingers",
+	"name" : "Lesson 6: Introducing A and S: Home row, fourth fingers",
 	"words" : [
 		"aaaa",
 		"ssss",
@@ -52,7 +52,7 @@
 		"a",
 		"sas"
 	],
-	"previousTest" : "dvorak_05",
-	"nextTest" : "dvorak_07",
+	"previousConfig" : "dvorak_05",
+	"nextConfig" : "dvorak_07",
 	"timer" : false
 }

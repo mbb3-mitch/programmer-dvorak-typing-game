@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 38: Introducing \\ and |: Right fourth finger",
+	"name" : "Lesson 38: Introducing \\ and |: Right fourth finger",
 	"words" : [
 		"\\\\\\\\",
 		"||||",
@@ -30,7 +30,7 @@
 		"||\\",
 		"||\\"
 	],
-	"previousTest" : "dvorak_37",
-	"nextTest" : "dvorak_39",
+	"previousConfig" : "dvorak_37",
+	"nextConfig" : "dvorak_39",
 	"timer" : false
 }

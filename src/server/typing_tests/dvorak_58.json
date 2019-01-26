@@ -1,5 +1,5 @@
 {
-	"testName" : "Lesson 58: Comprehensive, including 7 and 6",
+	"name" : "Lesson 58: Comprehensive, including 7 and 6",
 	"words" : [
 		"((((",
 		"====",
@@ -70,7 +70,7 @@
 		"{(9*&2)||(5*&1)}->(z[7])",
 		"{(9*&2)||(5*&1)}->(z[7])"
 	],
-	"previousTest" : "dvorak_57",
-	"nextTest" : "dvorak_59",
+	"previousConfig" : "dvorak_57",
+	"nextConfig" : "dvorak_59",
 	"timer" : false
 }

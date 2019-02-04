@@ -20,7 +20,7 @@ function generateConfigs(input) {
             let config = {
                 author,
                 name: NamePrefix + String(quoteIndex).padStart(3,"000"),
-                quote
+                quote : cleanQuote(quote)
             };
             configs.push(config);
             quoteIndex++;
@@ -49,6 +49,10 @@ function calculateWords() {
         console.log("done");
     });
     
+}
+
+function cleanQuote(quote) {
+    return quote.replace(/’/g, "'");
 }
 
 var input = fs.createReadStream("server/tools/quotes-src.txt");

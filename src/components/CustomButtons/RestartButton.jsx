@@ -10,27 +10,48 @@ const styles = {
   }
 };
 
-function FloatingActionButtons(props) {
-  const { classes } = props;
-  return (
-    <span>
-      <Button
-        variant="contained"
-        color="secondary"
-        aria-label="Restore"
-        className={classes.fab}
-        onClick={() => {
-          props.restart();
-        }}
-      >
-        <RestoreIcon />
-      </Button>
-    </span>
-  );
+class FloatingActionButtons extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+  }
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown");
+  }
+
+  handleKeyDown(e) {
+    if (e.which === 75 && e.ctrlKey && e.shiftKey) {
+      this.props.restart();
+    }
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <span>
+        <Button
+          variant="contained"
+          color="secondary"
+          aria-label="Restore"
+          className={classes.fab}
+          onClick={() => {
+            this.props.restart();
+          }}
+        >
+          <RestoreIcon />
+        </Button>
+      </span>
+    );
+  }
 }
 
 FloatingActionButtons.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  restart: PropTypes.func.isRequired
 };
 
 export default withStyles(styles)(FloatingActionButtons);

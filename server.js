@@ -9,7 +9,8 @@ const CONFIG_ID = ":configID([\\w_]*)";
 app.get(`/api/typing/${TYPING_MODE}/:category?/${CONFIG_ID}`, (req, res) => {
   const category = req.params.category ? "/" + req.params.category : "";
   try {
-    const config = require(`./server/${req.params.typingMode}${category}/${req.params.configID}.json`);
+    let config = require(`./server/${req.params.typingMode}${category}/${req.params.configID}.json`);
+    config.navigationPath = `${req.params.typingMode}${category}`;
     res.setHeader("Content-Type", "application/json");
     res.send(config);
   } catch (e) {

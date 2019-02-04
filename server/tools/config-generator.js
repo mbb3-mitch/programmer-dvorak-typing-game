@@ -19,9 +19,16 @@ function generateConfigs(input) {
             let author = result[2];
             let config = {
                 author,
-                name: NamePrefix + String(quoteIndex).padStart(3,"000"),
-                quote : cleanQuote(quote)
+                name: NamePrefix + String(quoteIndex).padStart(3, "000"),
+                quote: cleanQuote(quote)
             };
+
+            if (quoteIndex < 107) {
+                config.nextConfig = filePrefix + String(quoteIndex + 1).padStart(3, "000");
+            }
+            if (quoteIndex > 1) {
+                config.previousConfig = filePrefix + String(quoteIndex - 1).padStart(3, "000");
+            }
             configs.push(config);
             quoteIndex++;
         }
@@ -40,15 +47,15 @@ function calculateWords() {
             config.words.push(result[1]);
         }
         let fileName = config.name.replace(/Quote #/, filePrefix);
-        fs.writeFile(`server/practice/quotes/${fileName}.json`,JSON.stringify(config),cb);
-    }, (err)=>{
-        if(err){
+        fs.writeFile(`server/practice/quotes/${fileName}.json`, JSON.stringify(config), cb);
+    }, (err) => {
+        if (err) {
             console.log(err);
             return;
         }
         console.log("done");
     });
-    
+
 }
 
 function cleanQuote(quote) {

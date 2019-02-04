@@ -20,11 +20,11 @@ class FloatingActionButtons extends React.Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keydown");
+    document.removeEventListener("keydown", this.handleKeyDown);
   }
 
   handleKeyDown(e) {
-    if (e.which === 75 && e.ctrlKey && e.shiftKey) {
+    if (e.which === 75 && e.ctrlKey && e.altKey) {
       this.props.restart();
     }
   }

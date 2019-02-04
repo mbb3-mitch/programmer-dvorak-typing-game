@@ -5,11 +5,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import TypingTest from "components/TypingTest/TypingTest.jsx";
 import SectionTypingTest from "views/Components/Sections/SectionTypingTest.jsx";
 import axios from "axios";
 

@@ -35,7 +35,9 @@ class TypingPage extends React.Component {
 
   _getConfigData(props) {
     axios
-      .get(`/api/typing-test/${props.match.params.id}`)
+      .get(
+        `/api/typing/${props.match.params.typingMode}/${props.match.params.category}/${props.match.params.id}`
+      )
       .then(response => {
         this.setState({
           match: props.match,

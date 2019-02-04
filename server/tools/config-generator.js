@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const fs = require("fs");
-const _ = require('underscore');
+const async = require('async');
 const QUOTE = /“(.*)”\s*(?:-([\w .]+))?(?:\n|)/g; // $1: quote, [$2]: author
 const WORD = /(?:^|\s)([^\s]*)/g; // $1: word,
 
@@ -19,7 +19,7 @@ function generateConfigs(input) {
             let author = result[2];
             let config = {
                 author,
-                name: NamePrefix + quoteIndex,
+                name: NamePrefix + String(quoteIndex).padStart(3,"000"),
                 quote
             };
             configs.push(config);
@@ -33,14 +33,22 @@ function generateConfigs(input) {
 }
 
 function calculateWords() {
-    _.each(configs, config => {
+    async.each(configs, (config, cb) => {
         let result;
-        config.word = [];
+        config.words = [];
         while (result = WORD.exec(config.quote)) {
-            config.word.push(result[1]);
+            config.words.push(result[1]);
         }
+        let fileName = config.name.replace(/Quote #/, filePrefix);
+        fs.writeFile(`server/practice/quotes/${fileName}.json`,JSON.stringify(config),cb);
+    }, (err)=>{
+        if(err){
+            console.log(err);
+            return;
+        }
+        console.log("done");
     });
-    console.log(JSON.stringify(configs));
+    
 }
 
 var input = fs.createReadStream("server/tools/quotes-src.txt");

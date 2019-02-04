@@ -9,7 +9,11 @@ var indexRoutes = [
   { path: "/profile-page", name: "ProfilePage", component: ProfilePage },
   { path: "/login-page", name: "LoginPage", component: LoginPage },
   { path: "/components", name: "Components", component: Components },
-  { path: "/typing/:id", name: "TypingPage", component: TypingPage },
+  {
+    path: "/typing/:typingMode/:category/:id",
+    name: "TypingPage",
+    component: TypingPage
+  },
   { path: "/menu", name: "MenuPage", component: MenuPage },
   { path: "/", exact: true, name: "LandingPage", component: LandingPage }
 ];

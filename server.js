@@ -6,9 +6,10 @@ let port = 5000;
 const TYPING_MODE = ":typingMode(lessons|practice)";
 const CONFIG_ID = ":configID([\\w_]*)";
 
-app.get(`/api/typing/${TYPING_MODE}/${CONFIG_ID}`, (req, res) => {
+app.get(`/api/typing/${TYPING_MODE}/:category?/${CONFIG_ID}`, (req, res) => {
+  const category = req.params.category ? "/" + req.params.category : "";
   try {
-    const config = require(`./server/${req.params.typingMode}/${req.params.configID}.json`);
+    const config = require(`./server/${req.params.typingMode}${category}/${req.params.configID}.json`);
     res.setHeader("Content-Type", "application/json");
     res.send(config);
   } catch (e) {

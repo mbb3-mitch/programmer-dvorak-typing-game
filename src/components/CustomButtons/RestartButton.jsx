@@ -34,6 +34,7 @@ class FloatingActionButtons extends React.Component {
     return (
       <span>
         <Button
+          title="ctrl + alt + k"
           variant="contained"
           color="secondary"
           aria-label="Restore"

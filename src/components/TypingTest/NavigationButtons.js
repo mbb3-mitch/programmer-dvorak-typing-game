@@ -17,6 +17,9 @@ class NavigationButtons extends React.Component {
 
   handleKeyDown(e) {
     const { previousConfig, nextConfig, navigationPath } = this.props.gameState;
+    if (e.which === 77 && e.ctrlKey && e.altKey && previousConfig) {
+      window.location.href = `/menu`;
+    }
     if (e.which === 78 && e.ctrlKey && e.altKey && nextConfig) {
       window.location.href = `/typing/${navigationPath}/${nextConfig}`;
     }
@@ -30,16 +33,16 @@ class NavigationButtons extends React.Component {
     return (
       <section className="type-section">
         <Link to={`/menu`}>
-          <Button variant="contained"> Back </Button>
+          <Button variant="contained" title="ctrl + alt + m"> Back </Button>
         </Link>
         {previousConfig && (
           <Link to={`/typing/${navigationPath}/${previousConfig}`}>
-            <Button variant="contained">Previous Test</Button>
+            <Button variant="contained" title="ctrl + alt + p">Previous Test</Button>
           </Link>
         )}
         {nextConfig && (
           <Link to={`/typing/${navigationPath}/${nextConfig}`}>
-            <Button variant="contained">Next Test</Button>
+            <Button variant="contained" title="ctrl + alt + n">Next Test</Button>
           </Link>
         )}
       </section>

@@ -1,8 +1,13 @@
-let app = require("express")();
-let server = require("http").Server(app);
-let fs = require("fs");
-let _ = require("underscore");
-let port = 5000;
+const express = require("express");
+const path = require("path");
+const app = express();
+const server = require("http").Server(app);
+const fs = require("fs");
+const _ = require("underscore");
+const port = 5019;
+
+app.use(express.static(path.join(__dirname, "build")));
+
 const TYPING_MODE = ":typingMode(lessons|practice)";
 const CONFIG_ID = ":configID([\\w_]*)";
 
@@ -37,6 +42,15 @@ app.get(`/api/load/${TYPING_MODE}/:category?`, (req, res) => {
     });
     res.send({ typingConfigs });
   });
+});
+
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get("*", function(req, res){
+  res.send("what???", 404);
 });
 
 server.listen(port, () => {

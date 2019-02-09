@@ -20,10 +20,13 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Learning a new keyboard layout?</h2>
+            <h2 className={classes.title}>
+            Learning a dvorak keyboard layout?
+            </h2>
             <h5 className={classes.description}>
-              Burbledy typing offers a variety of lessons and practicing modes to help you learn 
-              a new keyboard layout in a progressive and logical sequence which you can adapt to your skill level and preference.
+              Typing Dvorak offers a variety of lessons and practicing modes to
+              help you learn a new keyboard layout in a progressive and logical
+              sequence which you can adapt to your skill level and preference.
             </h5>
           </GridItem>
         </GridContainer>

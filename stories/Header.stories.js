@@ -4,7 +4,7 @@ import Header from "../src/components/Header/Header";
 
 storiesOf("Header", module).add("Simple display", () => (
   <Header
-    brand="Burbledy typing"
+    brand="Typing Dvorak"
     fixed
     color="blue"
     changeColorOnScroll={{

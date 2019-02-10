@@ -50,11 +50,6 @@ app.get("/*", function(req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-//The 404 Route (ALWAYS Keep this as the last route)
-app.get("*", function(req, res) {
-  res.send("what???", 404);
-});
-
 server.listen(port, () => {
   console.log("Running server on 127.0.0.1:" + port);
 });

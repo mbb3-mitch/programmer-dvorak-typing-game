@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const server = require("http").Server(app);
 const fs = require("fs");
 const _ = require("underscore");
 const port = 5019;
@@ -50,6 +49,4 @@ app.get("/*", function(req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-server.listen(port, () => {
-  console.log("Running server on 127.0.0.1:" + port);
-});
+app.listen(port);

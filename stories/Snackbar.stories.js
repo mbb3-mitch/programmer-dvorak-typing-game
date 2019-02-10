@@ -6,8 +6,8 @@ storiesOf("SnackbarContent", module).add("Simple display", () => (
   <SnackbarContent
     message={
       <span>
-        <b>INFO ALERT:</b> You've got some friends nearby, stop looking at
-        your phone and find them...
+        <b>INFO ALERT:</b> You've got some friends nearby, stop looking at your
+        phone and find them...
       </span>
     }
     close

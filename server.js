@@ -14,7 +14,9 @@ const CONFIG_ID = ":configID([\\w_]*)";
 app.get(`/api/typing/${TYPING_MODE}/:category?/${CONFIG_ID}`, (req, res) => {
   const category = req.params.category ? "/" + req.params.category : "";
   try {
-    let config = require(`./server/${req.params.typingMode}${category}/${req.params.configID}.json`);
+    let config = require(`./server/${req.params.typingMode}${category}/${
+      req.params.configID
+    }.json`);
     config.navigationPath = `${req.params.typingMode}${category}`;
     res.setHeader("Content-Type", "application/json");
     res.send(config);
@@ -49,7 +51,7 @@ app.get("/*", function(req, res) {
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
-app.get("*", function(req, res){
+app.get("*", function(req, res) {
   res.send("what???", 404);
 });
 

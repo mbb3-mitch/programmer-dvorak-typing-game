@@ -31,7 +31,9 @@ class TypingPage extends React.Component {
   _getConfigData(props) {
     axios
       .get(
-        `/api/typing/${props.match.params.typingMode}/${props.match.params.category}/${props.match.params.id}`
+        `/api/typing/${props.match.params.typingMode}/${
+          props.match.params.category
+        }/${props.match.params.id}`
       )
       .then(response => {
         this.setState({
@@ -75,7 +77,10 @@ class TypingPage extends React.Component {
           }}
         >
           <div className={classes.container}>
-            <SectionTypingTest gameState={this.state.gameState} cardAnimaton={this.state.cardAnimaton} />
+            <SectionTypingTest
+              gameState={this.state.gameState}
+              cardAnimaton={this.state.cardAnimaton}
+            />
           </div>
           <Footer whiteFont />
         </div>

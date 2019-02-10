@@ -18,7 +18,6 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import PurposeSection from "./Sections/PurposeSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
 import SectionTypingTest from "views/Components/Sections/SectionTypingTest.jsx";
 
 class LandingPage extends React.Component {

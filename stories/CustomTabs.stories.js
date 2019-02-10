@@ -15,14 +15,12 @@ storiesOf("Custom Linear Progress", module).add("Simple display", () => (
         tabIcon: Face,
         tabContent: (
           <p>
-            I think that’s a responsibility that I have, to push
-            possibilities, to show people, this is the level that
-            things could be at. So when you get something that has
-            the name Kanye West on it, it’s supposed to be pushing
-            the furthest possibilities. I will be the leader of a
-            company that ends up being worth billions of dollars,
-            because I got the answers. I understand culture. I am
-            the nucleus.
+            I think that’s a responsibility that I have, to push possibilities,
+            to show people, this is the level that things could be at. So when
+            you get something that has the name Kanye West on it, it’s supposed
+            to be pushing the furthest possibilities. I will be the leader of a
+            company that ends up being worth billions of dollars, because I got
+            the answers. I understand culture. I am the nucleus.
           </p>
         )
       },
@@ -31,14 +29,13 @@ storiesOf("Custom Linear Progress", module).add("Simple display", () => (
         tabIcon: Chat,
         tabContent: (
           <p>
-            I think that’s a responsibility that I have, to push
-            possibilities, to show people, this is the level that
-            things could be at. I will be the leader of a company
-            that ends up being worth billions of dollars, because
-            I got the answers. I understand culture. I am the
-            nucleus. I think that’s a responsibility that I have,
-            to push possibilities, to show people, this is the
-            level that things could be at.
+            I think that’s a responsibility that I have, to push possibilities,
+            to show people, this is the level that things could be at. I will be
+            the leader of a company that ends up being worth billions of
+            dollars, because I got the answers. I understand culture. I am the
+            nucleus. I think that’s a responsibility that I have, to push
+            possibilities, to show people, this is the level that things could
+            be at.
           </p>
         )
       },
@@ -47,14 +44,12 @@ storiesOf("Custom Linear Progress", module).add("Simple display", () => (
         tabIcon: Build,
         tabContent: (
           <p>
-            think that’s a responsibility that I have, to push
-            possibilities, to show people, this is the level that
-            things could be at. So when you get something that has
-            the name Kanye West on it, it’s supposed to be pushing
-            the furthest possibilities. I will be the leader of a
-            company that ends up being worth billions of dollars,
-            because I got the answers. I understand culture. I am
-            the nucleus.
+            think that’s a responsibility that I have, to push possibilities, to
+            show people, this is the level that things could be at. So when you
+            get something that has the name Kanye West on it, it’s supposed to
+            be pushing the furthest possibilities. I will be the leader of a
+            company that ends up being worth billions of dollars, because I got
+            the answers. I understand culture. I am the nucleus.
           </p>
         )
       }

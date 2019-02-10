@@ -249,13 +249,14 @@ class TypingTest extends React.Component {
             <Small> {this.props.gameState.description} </Small>
           )}{" "}
         </h2>
-        {this.state.words && !this.state.finished && (
-          <WordSection
-            id="word-section"
-            className={classes.wordSection}
-            words={this.state.words}
-          />
-        )}{" "}
+        {this.state.words &&
+          !this.state.finished && (
+            <WordSection
+              id="word-section"
+              className={classes.wordSection}
+              words={this.state.words}
+            />
+          )}{" "}
         {!this.state.finished && (
           <TypingTextBox
             handleSubmitWord={this.handleSubmitWord}
@@ -275,14 +276,14 @@ class TypingTest extends React.Component {
             handleTimeUp={this.handleTimeUp}
           />
         ) : (
-            <StopWatch
-              started={this.state.started}
-              paused={this.state.paused}
-              finished={this.state.finished}
-              timeElapsed={this.state.timeElapsed}
-              updateTimeElapsed={this.updateTimeElapsed}
-            />
-          )}{" "}
+          <StopWatch
+            started={this.state.started}
+            paused={this.state.paused}
+            finished={this.state.finished}
+            timeElapsed={this.state.timeElapsed}
+            updateTimeElapsed={this.updateTimeElapsed}
+          />
+        )}{" "}
         <RestartButton id="restart" restart={this.restartTest}>
           {" "}
         </RestartButton>{" "}

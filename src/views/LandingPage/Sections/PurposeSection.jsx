@@ -21,7 +21,7 @@ class ProductSection extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>
-            Learning a dvorak keyboard layout?
+              Learning a dvorak keyboard layout?
             </h2>
             <h5 className={classes.description}>
               Typing Dvorak offers a variety of lessons and practicing modes to

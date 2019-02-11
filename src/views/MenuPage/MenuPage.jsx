@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import * as queryString from "query-string";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -21,8 +22,21 @@ class MenuPage extends React.Component {
   }
 
   componentDidMount() {
+    this._getConfigData(this.props);
+  }
+
+  componentWillReceiveProps(prevProps) {
+    if (this.props.match !== prevProps.match) {
+      this._getConfigData(prevProps);
+    }
+  }
+
+  _getConfigData(props) {
+    const { mode, category } = queryString.parse(props.location.search);
+    const configsPath =
+      mode && category ? `${mode}/${category}` : `lessons/dvorak`;
     axios
-      .get(`/api/load/lessons/dvorak`)
+      .get(`/api/load/${configsPath}`)
       .then(
         function(response) {
           this.setState({

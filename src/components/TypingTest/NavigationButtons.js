@@ -28,16 +28,18 @@ class NavigationButtons extends React.Component {
     }
   }
 
+  goBack(){
+    window.history.back();
+  }
+
   render() {
     const { previousConfig, nextConfig, navigationPath } = this.props.gameState;
     return (
       <section className="type-section">
-        <Link to={`/menu`}>
-          <Button variant="contained" title="ctrl + alt + m">
+          <Button variant="contained" title="ctrl + alt + m" onClick={this.goBack}>
             {" "}
             Back{" "}
           </Button>
-        </Link>
         {previousConfig && (
           <Link to={`/typing/${navigationPath}/${previousConfig}`}>
             <Button variant="contained" title="ctrl + alt + p">
@@ -46,7 +48,7 @@ class NavigationButtons extends React.Component {
           </Link>
         )}
         {nextConfig && (
-          <Link to={`/typing/${navigationPath}/${nextConfig}`}>
+          <Link to={`/typing/${navigationPath}/${nextConfig}`}>~
             <Button variant="contained" title="ctrl + alt + n">
               Next Test
             </Button>

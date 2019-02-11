@@ -58,7 +58,7 @@ class LevelSectionCarousel extends React.Component {
             className={classNames(classes["slide__levelID"], "slide__levelID")}
           >
             <h4>{level.levelID}</h4>
-            <Link to={`/typing/${level.path}`}>
+            <Link to={`${level.path}`}>
               <Button
                 className={classNames(
                   classes["slide__select"],

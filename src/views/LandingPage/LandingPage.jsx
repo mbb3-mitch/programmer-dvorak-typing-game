@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
   }
   _getConfigData(props) {
     axios
-      .get(`/api/typing/practice/500_words`)
+      .get(`/api/typing/practice/normal/500_words`)
       .then(response => {
         this.setState({
           match: props.match,

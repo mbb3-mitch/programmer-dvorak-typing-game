@@ -37,15 +37,20 @@ app.get(`/api/load/${TYPING_MODE}/:category?`, (req, res) => {
     _.each(files, file => {
       let config = require(`${typingConfigDir}/${file}`);
       typingConfigs.push({
-        path: file.replace(/\.json/, ""),
+        path: `${typingConfigDir.replace(
+          /\.\/server/,
+          "/typing"
+        )}/${file.replace(/\.json/, "")}`,
         levelID: config.name
       });
     });
-    res.send({ typingConfigs });
+    res.send({
+      typingConfigs
+    });
   });
 });
 
-app.get("/*", function(req, res) {
+app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 

@@ -35,6 +35,12 @@ Play at [typingdvorak.com](https://typingdvorak.com/).
 - Improve accessibility (focus management, ARIA labels) and mobile typing ergonomics.
 - Add automated tests and Storybook coverage for the TypingTest flow.
 
+## Server Updates (pm2)
+- Start locally: `npm run server` (runs `server.js` on port 5019).
+- Start under pm2: `pm2 start npm --name typing-dvorak -- run server` then `pm2 save`.
+- Enable restart on reboot: `pm2 startup` and run the printed `sudo env PATH=$PATH:/usr/local/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u <user> --hp /home/<user>`.
+- Deploy/update flow: pull changes, run `npm install`, `npm run build`, then `pm2 restart typing-dvorak`.
+
 ## Screenshots
 <div align="center">
   <img src="assets/screenshots/menu.png" alt="Menu page with lesson carousel" width="420" />
